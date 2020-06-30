@@ -1,253 +1,88 @@
-<!DOCTYPE html>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<title>T E R A P H A N</title>
-	<link rel="shortcut icon" href="https://helloteraphan.firebaseapp.com/assets/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="https://helloteraphan.firebaseapp.com/assets/favicon.ico" type="image/x-icon">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://kit.fontawesome.com/ec1ed85cc1.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<style>
-		body {
-  background-color: #272727;
-  padding: 10px;
-}
 
-.fakeButtons {
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  border: 1px solid #000;
-  position: relative;
-  top: 6px;
-  left: 6px;
-  background-color: #ff3b47;
-  border-color: #9d252b;
-  display: inline-block;
+<!doctype html>
+<meta charset="utf-8" />
+<title>teraphan</title>
+<meta name="viewport" content="width=device-width initial-scale=1">
+<link rel="icon" href="https://helloteraphan.firebaseapp.com/assets/favicon.ico" type="image/x-icon">
+<style>
+body {
+ margin: 40px;
+ font: 1rem "Helvetica Neue", Helvetica, sans-serif;
+ line-height: 1.5;
+ background-color: #fff;
 }
+code, pre { font-family: Lucida Console, Monaco, monospace; }
+a { text-decoration: none; color: #22a; }
+h1 { font-size: 200%; }
+h3 { font-size: 130%; }
+h1 a { color: #000; }
+.outer { display: flex; flex-wrap: wrap; }
+.box h4 { margin: 0px 0px 5px; font-size: 120%; font-weight: 400; }
+.box { width: 444px; border: 1px solid #ccc; padding: 15px; margin: 15px; }
+.box img, .box svg { float: left; margin-right: 15px; }
+#logo { float: left; margin-right: 15px; }
+img { border-width: 0; }
+</style>
 
-.fakeMinimize {
-  left: 11px;
-  background-color: #ffc100;
-  border-color: #9d802c;
-}
+<h1>
+	<a href="/">
+		<img src="https://helloteraphan.firebaseapp.com/logo.png" width="40 px">
+		copy's home
+	</a>
+</h1>
 
-.fakeZoom {
-  left: 16px;
-  background-color: #00d742;
-  border-color: #049931;
-}
+<p>
+	You can email me at <code>copy@copy.sh</code>.
+	Use my <a href="/email.asc">GnuPG key</a>.
+</p>
 
-.fakeMenu {
-  width: 550px;
-  box-sizing: border-box;
-  height: 25px;
-  background-color: #bbb;
-  margin: 0 auto;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-}
+<h3>Projects</h3>
 
-.fakeScreen {
-  background-color: #151515;
-  box-sizing: border-box;
-  width: 550px;
-  margin: 0 auto;
-  padding: 20px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-p {
-  position: relative;
-  left: 50%;
-  margin-left: -8.5em;
-  text-align: left;
-  font-size: 1.25em;
-  font-family: monospace;
-  white-space: normal;
-  overflow: hidden;
-  width: 0;
-}
-
-span {
-  color: #fff;
-  font-weight: bold;
-}
-
-.line1 {
-  color: #9CD9F0;
-  -webkit-animation: type .5s 1s steps(20, end) forwards;
-  -moz-animation: type .5s 1s steps(20, end) forwards;
-  -o-animation: type .5s 1s steps(20, end) forwards;
-  animation: type .5s 1s steps(20, end) forwards;
-}
-
-.cursor1 {
-  -webkit-animation: blink 1s 2s 2 forwards;
-  -moz-animation: blink 1s 2s 2 forwards;
-  -o-animation: blink 1s 2s 2 forwards;
-  animation: blink 1s 2s 2 forwards;
-}
-
-.line2 {
-  color: #CDEE69;
-  -webkit-animation: type .5s 4.25s steps(20, end) forwards;
-  -moz-animation: type .5s 4.25s steps(20, end) forwards;
-  -o-animation: type .5s 4.25s steps(20, end) forwards;
-  animation: type .5s 4.25s steps(20, end) forwards;
-}
-
-.cursor2 {
-  -webkit-animation: blink 1s 5.25s 2 forwards;
-  -moz-animation: blink 1s 5.25s 2 forwards;
-  -o-animation: blink 1s 5.25s 2 forwards;
-  animation: blink 1s 5.25s 2 forwards;
-}
-
-.line3 {
-  color: #E09690;
-  -webkit-animation: type .5s 7.5s steps(20, end) forwards;
-  -moz-animation: type .5s 7.5s steps(20, end) forwards;
-  -o-animation: type .5s 7.5s steps(20, end) forwards;
-  animation: type .5s 7.5s steps(20, end) forwards;
-}
-
-.cursor3 {
-  -webkit-animation: blink 1s 8.5s 2 forwards;
-  -moz-animation: blink 1s 8.5s 2 forwards;
-  -o-animation: blink 1s 8.5s 2 forwards;
-  animation: blink 1s 8.5s 2 forwards;
-}
-
-.line4 {
-  color: #fff;
-  -webkit-animation: type .5s 10.75s steps(20, end) forwards;
-  -moz-animation: type .5s 10.75s steps(20, end) forwards;
-  -o-animation: type .5s 10.75s steps(20, end) forwards;
-  animation: type .5s 10.75s steps(20, end) forwards;
-}
-
-.cursor4 {
-  -webkit-animation: blink 1s 11.5s infinite;
-  -moz-animation: blink 1s 8.5s infinite;
-  -o-animation: blink 1s 8.5s infinite;
-  animation: blink 1s 8.5s infinite;
-}
-
-@-webkit-keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-moz-keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-o-keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes type {
-  to {
-    width: 17em;
-  }
-}
-
-@-moz-keyframes type {
-  to {
-    width: 17em;
-  }
-}
-
-@-o-keyframes type {
-  to {
-    width: 17em;
-  }
-}
-
-@keyframes type {
-  to {
-    width: 17em;
-  }
-}
-	</style>
-	</head>
-	<body>
-	<div class=fakeMenu>
-  <div class="fakeButtons fakeClose"></div>
-  <div class="fakeButtons fakeMinimize"></div>
-  <div class="fakeButtons fakeZoom"></div>
+<div class="outer">
+<div class="box">
+	<img src="/img/v86.png" width="100" height="100" alt="v86">
+	<h4><a href="/v86/">Virtual x86</a></h4>
+	Run KolibriOS, Linux or Windows 1.01 in your browser.
 </div>
-<div class="fakeScreen">
-  <p class="line1">$ loading... resource helloteraphan.firebaseapp.com<span class="cursor1">_</span></p>
-  <p class="line2">helloteraphan.package completed!<span class="cursor2">_</span></p>
-  <p class="line3">[?] Ready to build your dream?<span class="cursor3">_</span></p>
-  <p class="line4">><span class="cursor4">_</span> contact us; hello@teraphan.com</p>
+
+<div class="box">
+	<img src="/img/iw.png" width="100" height="100" alt="I Wanna Be Thy Copy">
+	<h4><a href="/iw/">I Wanna Be Thy Copy</a></h4>
+	A platformer fangame with 2 levels so far.
+	The <a href="https://github.com/copy/iwbtc">game engine</a> is available.
 </div>
-          <p>2020 T E R A P H A N <a href="mailto:hello@teraphan.com">Contact Us</a> | <a href="https://medium.com/@teraphan"><i class="fab fa-medium"></i>@Teraphan</a>.</p>
-	</body>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</html>
+</div>
+
+<div class="outer">
+<div class="box">
+	<svg width="100" height="100" viewbox="0 -.5 100 100"><rect height="100%" width="100%"/><path d="m2 63h6v6h-6m6-6h6v6h-6m0 0h6v6h-6m6-6h6v6h-6m-12 0h6v6h-6m24-78h6v6h-6m0 0h6v6h-6m6-12h6v6h-6m0 0h6v6h-6m24-12h6v6h-6m6-6h6v6h-6m-6 0h6v6h-6m6-6h6v6h-6m-30 0h6v6h-6m6-6h6v6h-6m0 0h6v6h-6m0 6h6v6h-6m6-24h6v6h-6m6-6h6v6h-6m0 0h6v6h-6m6-12h6v6h-6m-12 12h6v6h-6m6-6h6v6h-6m30-24h6v6h-6m0 0h6v6h-6m6-6h6v6h-6m-12 0h6v6h-6m12-6h6v6h-6m-36 36h6v6h-6m6-12h6v6h-6m6 0h6v6h-6m-18 0h6v6h-6m6 0h6v6h-6m6-6h6v6h-6m6-6h6v6h-6m6-12h6v6h-6m-30 6h6v6h-6m6-6h6v6h-6m24-6h6v6h-6m6-6h6v6h-6" fill="#ccc"/><path d="M2 0v100M8 0v100M14 0v100M20 0v100M26 0v100M32 0v100M38 0v100M44 0v100M50 0v100M56 0v100M62 0v100M68 0v100M74 0v100M80 0v100M86 0v100M92 0v100M98 0v100M0 3h100M0 9h100M0 15h100M0 21h100M0 27h100M0 33h100M0 39h100M0 45h100M0 51h100M0 57h100M0 63h100M0 69h100M0 75h100M0 81h100M0 87h100M0 93h100M0 99h100" stroke="#444"/></svg>
+	<h4><a href="/life/">Game of Life</a></h4>
+	A JavaScript version of Conway's Game of Life, based on the Hashlife-algorithm.
+	Source code available <a href="https://github.com/copy/life">here</a>.
+</div>
+
+<div class="box">
+	<svg height="100" viewbox="0 0 100 100" width="100"><path d="m0 0h100v100h-100z" fill="#1e1916"/><text fill="#fff" font-family="monospace" font-size="9pt" y="15"><tspan x="11" y="20">&lt;[-&lt;+&gt;]&lt;&lt;</tspan><tspan x="11" y="52">&lt;&lt;</tspan><tspan x="11" y="68">[&gt;&gt;+&lt;&lt;-]</tspan><tspan x="11" y="84">&gt;&gt;</tspan></text></svg>
+	<h4><a href="/brainfuck/">El Brainfuck</a></h4>
+	A Brainfuck editor &amp; optimizing interpreter, written in JavaScript. It's pretty fast.
+</div>
+</div>
+
+<h3>Service</h3>
+<ul>
+	<li><a href="https://github.com/copy/gdbprofiler">Rich man's profiler, a profiler for native executables</a></li>
+	<li><a href="https://github.com/copy/">My Github</a></li>
+	<li><a href="https://github.com/copy/dot-files">My dotfiles</a></li>
+	<li><a href="/jam15/">Falling Fellow: A game made in a 6 hour game jam written in OCaml</a></li>
+	<li><a href="/marmelade2/">Save the cake: Another game made in a 6 hour game jam, also OCaml</a></li>
+	<li><a href="/lcd/">My ALIX board with display</a></li>
+	<li><a href="/snake/">Codegolf: Snake in 456 bytes</a></li>
+	<li><a href="/tetris/">Codegolf: Tetris in 652 bytes</a></li>
+	<li><a href="/golfscript/">Codegolf: A golfscript interpreter in 2227 bytes</a></li>
+	<li><a href="/ulam/">Codegolf: Ulam's spiral in 159 bytes</a></li>
+	<li><a href="/stuff/brainfuck/">Some pieces of Brainfuck code</a></li>
+	<li><a href="/xkcd-688.html">An implementation of xkcd #688</a></li>
+	<li><a href="/jlife/">Conway's Game of Life in J</a></li>
+	<li><a href="/aes/">An old AES implementation for educational use</a></li>
+	<li><a href="/fractal/">A fractal</a></li>
+</ul>
