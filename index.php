@@ -46,8 +46,10 @@ img { border-width: 0; }
 </h1>
 
 <p>
-	Job: IT Outsource.
-	Contact me. <i class="fas fa-envelope"></i><a href="mailto:hello@teraphan.com">E-Mail</a> / Follow me on <i class="fab fa-medium"></i> <a href="https://medium.com/@teraphan">@Teraphan</a>
+	Job: IT Outsource.<br>
+	Location: Bangkok, Thailand.<br>
+	Contact me. <i class="fas fa-envelope"></i><a href="mailto:hello@teraphan.com">E-Mail</a><br>
+	Follow me on <i class="fab fa-medium"></i> <a href="https://medium.com/@teraphan">@Teraphan</a>
 </p>
 
 <h3>Projects</h3>
@@ -68,10 +70,12 @@ img { border-width: 0; }
 
 <h3>Service</h3>
 <ul>
+	<li>Website and SEO</li>
 	<li>Helpdesk Remote Support 24/7.</li>
 	<li>Server Installation, Configuration and Maintenance.</li>
 	<li>Network Installation, Configuration and Maintenance.</li>
-	<li>Network Security and Block Website.</li>
+	<li>Network Security and Firewall.</li>
+	<li>Internal Servers and Co-Located Servers</li>
 	<li>VPN PPTP, Site to Site Included Free Dynamin DNS 5 Years.</li>
 	<li>Setup for File Server, Web Server, E-Mail Server.</li>
 	<li>Recomment for Small Office and Small Business.</li>
